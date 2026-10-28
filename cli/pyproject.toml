@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mastro-cli"
+version = "1.0.0"
+description = "Command Line Interface for the MASTRO platform (orchestrator adapter + agentic modules)"
+requires-python = ">=3.10"
+dependencies = ["httpx>=0.24", "mastro-orchestrator-adapter>=1.0"]
+
+[project.scripts]
+mastro = "mastro_cli:main"
+
+[tool.setuptools]
+py-modules = ["mastro_cli"]

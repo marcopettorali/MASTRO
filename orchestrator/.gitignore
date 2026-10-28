@@ -1,0 +1,9 @@
+# Datasets and models of the example services (see the DATASET.md files)
+examples/traffic_generators/tg_audio/wav/*
+!examples/traffic_generators/tg_audio/wav/DATASET.md
+!examples/traffic_generators/tg_audio/wav/down.wav
+!examples/traffic_generators/tg_audio/wav/go.wav
+!examples/traffic_generators/tg_audio/wav/no.wav
+!examples/traffic_generators/tg_audio/wav/yes.wav
+examples/services/audio_transcription/local/model/*
+!examples/services/audio_transcription/local/model/DATASET.md

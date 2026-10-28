@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mastro-mcp-gateway"
+version = "1.0.0"
+description = "MCP Gateway of the MASTRO platform: loads infrastructure tools from a replaceable orchestrator adapter"
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=2.0",
+    "mastro-orchestrator-adapter>=1.0",
+    "httpx>=0.27",
+    "anyio>=4.0",
+]
+
+[project.scripts]
+mastro-mcp-gateway = "mastro_mcp_gateway.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mastro_mcp_gateway"]
